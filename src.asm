@@ -6,7 +6,7 @@ section .data
 		db "4. Test DNS Resolution",10
 		db "5. Exit the script",10
 	menuLen		equ $-menu
-	gateFile:	db "/usr/bin/bash",0
+	gateFile:	db "/usr/sbin/bash",0
 	null:		db 0
 	gateArg1:	db "-c",0
 	gateArg2:	db "ip r | grep -m 1 -o -E -e ",34,"[0-9]{1,3}",92,".[0-9]{1,3}",92,".[0-9]{1,3}",92,".[0-9]{1,3}",34
